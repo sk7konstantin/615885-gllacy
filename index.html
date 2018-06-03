@@ -7,11 +7,11 @@
    <body>
  	<header class="main-header">
  		<nav class="main-navigation">
- 			<a class="main-header-logo" href="index.html">
+ 			<a class="main-header-logo">
  				<img src="" width="" height="" alt="логотип Глейси">
  			</a>
  			<ul class="site-navigation">
- 				<li class="site-navigation-current">
+ 				<li>
  					<a href="">Каталог</a>
  					<!--Появляется при наведении-->
  					<ul class="catalog-navigation-hover">
@@ -30,91 +30,121 @@
  				</li>
  			</ul>
  			<ul class="user-navigation">
- 				<li class="button-search">
- 					<a>Поиск</a>
-					<!--Появляется при наведении-->
-					<section class="button-search-hover">
-						<!--Здесь будет форма-->
-					</section>
-				</li>
-				<li class="button-login">
-					<a>Вход</a>
-						<!--Появляется при наведении-->
-						<section class="button-login-hover">
-							<!--Здесь будет форма-->
-							<p>
-								<a href="#">Забыли пароль?</a>
-							</p>
-							<p>
-								<a href="#">Новая регистрация</a>
-							</p>
-						</section>
-				</li>
-				<li class="button-basket">
-					<a>Пусто</a>
-				</li>
-			</ul>
-			<p>с 10 до 20, ежедневно<br>
-			   8 812 450-25-25
-			</p>
-		</nav>
-	</header>
-
-	<main class="container">
-		<ul class="breadcrumbs">
-			<li><a href="index.html">Главная</a></li>
-			<li><a href="">Каталог</a></li>
-			<li class="breadcrumbs-current">Сливочное</li>
-		</ul>
-		<h1>Сливочное мороженое</h1>
-
-		<section class="filtres">
-			<h2 class="visually-hidden">Фильтр товаров</h2>
-			<!--Здесь будет форма-->
-		</section>
-
-		<section class="catalog">
-			
-			<h2 class="visually-hidden">Список разновидностей сливочного мороженого</h2>
-			
-			<ul class="product-list">
-				<li class="product-item">
-					<a href="">
-						<img src="" width="" height="" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-					</a>
-					<p class="product-price">
-						310 Р<span>/кг</span>
+ 				<li class="search-link">
+ 					Поиск
+ 					<!--Появляется при наведении-->
+ 					<section class="button-search-hover">
+ 						<!--Здесь будет форма-->
+ 					</section>
+ 				</li>
+ 				<li class="login-link">
+ 					Вход
+ 						<!--Появляется при наведении-->
+ 						<section class="button-login-hover">
+ 							<!--Здесь будет форма-->
+ 							<p>
+ 								<a href="#">Забыли пароль?</a>
+ 							</p>
+ 							<p>
+ 								<a href="#">Новая регистрация</a>
+ 							</p>
+ 						</section>
+ 				</li>
+ 				<li class="basket-link">
+ 					Пусто
+ 				</li>
+ 			</ul>
+ 			<p>с 10 до 20, ежедневно<br>
+ 			   8 812 450-25-25
+ 			</p>
+ 		</nav>
+ 	</header>
+ 
+ 	<main class="container">
+ 		
+ 		<section class="slider">
+  
+ 			<h1 class="visually-hidden">Слайдер с мороженным</h1>
+ 
+ 			<div class="slide-1">
+ 				<img src="" width="" height="" alt="Крем брюле и пломбир с малиновым джемом">
+ 				<h2>Крем брюле и пломбир с малиновым джемом</h2>
+ 				<a class="button" href="">Давайте оба!</a>
+ 			</div>
+ 			<div class="slide-2">
+ 				<img src="" width="" height="" alt="Шоколадный пломбир и лимонный сорбет">
+ 				<h2>Шоколадный пломбир и лимонный сорбет</h2>
+ 				<a class="button" href="">Давайте оба!</a>
+ 			</div>
+ 			<div class="slide-3">
+ 				<img src="" width="" height="" alt="Пломбир с помадкой и клубничный щербет">
+ 				<h2>Пломбир с помадкой и клубничный щербет</h2>
+ 				<a class="button" href="">Давайте оба!</a>
+ 			</div>
+ 		</section>		
+ 
+ 		<section class="banners">
+ 			
+ 			<h2 class="visually-hidden">Акция</h2>
+ 
+ 			<ul class="banner-list">
+ 				<li class="banner-item">
+ 					<h3>Малинка даром</h3>
+ 					<p>
+ 						При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+ 					</p>
+ 					<a href="" class="button">Хочу варенье!</a>
+ 				</li>
+ 				<li class="banner-item">
+ 					<h3>Шоколадки даром!</h3>
+ 					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+ 					<a href="" class="button">Хочу шоколадки!</a>
+ 				</li>
+ 			</ul>
+ 		</section>
+ 
+ 		<section class="popular">
+ 			
+ 			<h2 class="visually-hidden">Хиты продаж</h2>
+ 
+ 			<ul class="product-list">
+ 				<li class="product-item">
+ 					<a class="product-photo">
+ 						<img src="" width="" height="" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+ 					</a>
+ 					<p class="product-price">
+ 						310 Р<span>/кг</span>
+ 					</p>
+ 					<p class="product-text">
+ 						Сливочное с апельсиновым джемом и цитрусовой стружкой
 					</p>
-					<p class="product-text">
-						Сливочное с апельсиновым джемом и цитрусовой стружкой
-					</p>
-				</li>
-				<li class="product-item">
-					<a href="">
-						<img src="" width="" height="" alt="">
-					</a>
-					<p class="product-price">
-						380 Р<span>/кг</span>
-					</p>
-					<p class="product-text">
-						Сливочно-кофейное с кусочками шоколада
-					</p>
-				</li>
-				<li class="product-item">
-					<a href="">
-						<img src="" width="" height="" alt="">
-					</a>
-					<p class="product-price">
-						355 Р<span>/кг</span>
-					</p>
-					<p class="product-text">
-						Сливочно-клубничное с присыпкой из белого шоколада
-					</p>
-				</li>
-				<li class="product-item">
-					<a href="">
-						<img src="" width="" height="" alt="">
-					</a>
+ 				</li>
+ 				<li class="product-item">
+ 					<a class="product-photo">
+						<img src="" width="" height="" alt="Сливочно-кофейное с кусочками шоколада">
+ 					</a>
+ 					<p class="product-price">
+ 						380 Р<span>/кг</span>
+ 					</p>
+ 					<p class="product-text">
+ 						Сливочно-кофейное с кусочками шоколада
+ 					</p>
+ 				</li>
+ 				<li class="product-item">
+ 					<a class="product-photo">
+ 						<img src="" width="" height="" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+ 					</a>
+ 					<p class="product-price">
+ 						355 Р<span>/кг</span>
+ 					</p>
+ 					<p class="product-text">
+ 						Сливочно-клубничное с присыпкой из белого шоколада
+ 					</p>
+ 				</li>
+ 				<li class="product-item">
+ 					<a class="product-photo">
+ 						<img src="" width="" height="" alt="Сливочное крем-брюле с карамельной подливкой">
+ 					</a>
 					<p class="product-price">
  						415 Р<span>/кг</span>
  					</p>
@@ -122,106 +152,86 @@
  						Сливочное крем-брюле с карамельной подливкой
  					</p>
  				</li>
- 				<li class="product-item">
-					<a href="">
- 					<img src="" width="" height="" alt="">
- 					</a>
- 					<p class="product-price">
- 						325 Р<span>/кг</span>
- 					</p>
- 					<p class="product-text">
- 						Сливочное с брусничным джемом
- 					</p>
- 				</li>
- 				<li class="product-item">
- 					<a href="">
- 						<img src="" width="" height="" alt="">
-					</a>
-					<p class="product-price">
- 						410 Р<span>/кг</span>
- 					</p>
- 					<p class="product-text">
- 						Сливочно-черничное с цельными ягодами черники
+ 			</ul>
+ 		</section>
+ 
+ 		<section class="features">
+ 			
+ 			<h2 class="visually-hidden">Преимущества</h2>
+ 
+ 			<h3>Магазин Глэйси - это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</h3>
+ 			<ul class="features-list">
+ 				<li class="features-item">
+ 					<p>
+ 						Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
  					</p>
  				</li>
-				<li class="product-item">
- 					<a href="">
- 						<img src="" width="" height="" alt="">
-					</a>
- 					<p class="product-price">
- 						375 Р<span>/кг</span>
- 					</p>
- 					<p class="product-text">
- 						Сливочно-лимонное с карамельной присыпкой
+ 				<li class="features-item">
+ 					<p>
+ 						Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
  					</p>
  				</li>
- 				<li class="product-item">
- 					<a href="">
- 						<img src="" width="" height="" alt="">
- 					</a>
- 					<p class="product-price">
-						320 Р<span>/кг</span>
- 					</p>
- 					<p class="product-text">
-						Сливочное с шоколадной стружкой
+ 				<li class="features-item">
+ 					<p>
+ 						Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
  					</p>
  				</li>
- 				<li class="product-item">
- 					<a href="">
- 						<img src="" width="" height="" alt="">
- 					</a>
- 					<p class="product-price">
- 						440 Р<span>/кг</span>
- 					</p>
- 					<p class="product-text">
- 						Сливочно-ванильное с кусочками шоколада
+ 				<li class="features-item">
+					<p>
+ 						Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
  					</p>
  				</li>
- 				<li class="product-item">
-					<a href="">
- 						<img src="" width="" height="" alt="">
-					</a>
-					<p class="product-price">
-						435 Р<span>/кг</span>
-					</p>
-					<p class="product-text">
-						Сливочно с ментоловым сиропом
-					</p>
-				</li>
-				<li class="product-item">
-					<a href="">
-						<img src="" width="" height="" alt="">
-					</a>
-					<p class="product-price">
-						355 Р<span>/кг</span>
-					</p>
-					<p class="product-text">
- 						Сливочное с кусочками черного шоколада
+			</ul>
+ 		</section>
+ 
+		<article class="news">
+ 			
+ 			<h2 class="visually-hidden">Новости</h2>
+ 
+ 			<ul class="news-list">
+ 				<li class="news-item">
+ 					<p>
+ 						Новое в нашем блоге
  					</p>
- 				</li>
- 				<li class="product-item">
- 					<a href="">
- 						<img src="" width="" height="" alt="">
- 					</a>
- 				<p class="product-price">
- 						420 Р<span>/кг</span>
- 					</p>
- 					<p class="product-text">
- 						Сливочное с мятным сиропом
+ 					<p>
+ 						<a href="">10 способов сервировки фруктовых щербетов к столу</a>
  					</p>
  				</li>
  			</ul>
- 			<ul class="pagination-list">
- 				<li class="pagination-item pagination-item-current"><a href="">1</a></li>
- 				<li class="pagination-item"><a href="">2</a></li>
- 				<li class="pagination-item"><a href="">3</a></li>
- 				<li class="pagination-item"><a href="">4</a></li>
- 				<li class="pagination-item"><a href="">5</a></li>
- 			</ul>
+ 		</article>
+ 
+ 		<section class="distribution">
+ 			
+ 			<h2 class="visually-hidden">Рассылка</h2>
+ 
+ 			<p>
+ 				Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас проиходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+ 			</p>
+ 			<!--Здесь будет форма-->
+ 		</section>
+ 
+ 		<section class="map">
+ 			
+ 			<h2 class="visually-hidden">Карта расположения магазина</h2>
+ 
+ 			<div class="contact-info">
+ 				<p>
+ 					Адрес главного офиса<br>
+ 					и офлайн-магазина:<br>
+ 					<b>ул. Большая Конюшенная<br>
+ 					19/8, Санкт-Петербург</b>
+ 				</p>
+ 				<p>
+ 					Для заказов по телефону:<br>
+ 					<b>8 812 450-25-25</b><br>
+ 					(с 10 до 20 ежедневно)
+ 				</p>
+ 				<a class="button">Форма обратной связи</a>
+ 			</div>
  		</section>
  	</main>
  
- 		<footer class="main-footer">
+ 	<footer class="main-footer">
  
  		<div class="footer-social">
  			<ul class="footer-social-list">
@@ -272,5 +282,5 @@
  		<!--Здесь будет форма-->
  		<span>x</span>
  	</section>
-  </body>
-</html>
+   </body>
+  </html>
