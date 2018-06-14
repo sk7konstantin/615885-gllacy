@@ -1,0 +1,409 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #ffffff;
+
+	background-color: #859e90;
+	background-image: url("../img/bg.png");
+	background-position: top center;
+	background-repeat: repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button {
+	font: inherit;
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+
+	background-color: #f06441;
+}
+
+.button:hover {
+	color: #ffffff;
+	background-color: #f17e65;
+}
+
+.button:active {
+	color: #ffffff;
+
+	background-color: #f06441;
+}
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.site-navigation,
+.user-navigation {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: #ffffff;
+}
+
+.inner-page .site-navigation-current > a {
+	background-color: #d07058;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+	background-color: #f7f6f3;
+	color: #333333;
+}
+
+.catalog-navigation-hover a:hover,
+.catalog-navigation-hover a:focus {
+	background-color: #fbded7;
+}
+
+.catalog-navigation-hover a:active {
+	background-color: #f6b5a5;
+}
+
+
+.slider h2 {
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 700;
+}
+
+.slider a {
+	font-size: 32px;
+	line-height: 44px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+/*.slider a:hover,*/
+/*.slider a:active  {*/
+	/*color: #ffbc9e;*/
+/*}*/
+
+.banners {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.banner-list {
+	list-style: none;
+}
+
+.banners h3 {
+	font-size: 35px;
+	line-height: 41px;
+
+}
+
+.banner-item-crimson {
+	background-image: url("../img/crimson-bg.jpg");
+	background-repeat: no-repeat;
+}
+
+.banner-item-chocolate {
+	background-image: url("../img/chocolate-bg.jpg");
+	background-repeat: no-repeat;
+}
+
+.product-list {
+	list-style: none;
+}
+
+.product-item a {
+	font-size: 16px;
+	line-height: 22px;
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.product-item a:hover,
+.product-item a:active {
+	color: #ffbc9e;
+}
+
+.product-item:hover {
+	background-color: #9bafa3;
+}
+
+.features {
+	font-size: 16px;
+	line-height: 22px;
+	color: #323232;
+
+	background-image: url("../img/pattern-bg.jpg");
+	background-repeat: no-repeat;
+}
+
+.features h3 {
+	font-size: 24px;
+	line-height: 30px;
+	color: #323232;
+}
+
+.features-list {
+	list-style: none;
+}
+
+.news {
+	font-size: 16px;
+	line-height: 22px;
+	color: #323232;
+
+	background-image: url("../img/news-bg.jpg");
+	background-repeat: no-repeat;
+}
+
+.news-list {
+	color: #323232;
+	list-style: none;
+}
+
+.news-list h3 {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 22px;
+	color: #323232;
+}
+
+.news-list a {
+	color: #323232;
+	font-size: 24px;
+	line-height: 30px;
+	text-decoration: underline;
+}
+
+.news-list a:hover,
+.news-list a:active {
+	color: #e84d37;
+}
+
+.distribution {
+	font-size: 16px;
+	line-height: 22px;
+	color: #5a5a5a;
+	font-weight: 400;
+
+	background-color: #f8f7f4;
+}
+
+.map {
+	background-color: #f8f7f3;
+}
+
+.contact-info {
+	font-size: 14px;
+	line-height: 20px;
+	color: #323232;
+}
+
+.contact-info span {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+.main-footer ul {
+	list-style: none;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+.main-footer a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.main-footer a:hover,
+.main-footer a:active {
+	color: #ffbc9e;
+}
+
+.provider-item-love a {
+	font-weight: 700;
+}
+
+.footer-copyright a {
+	font-size: 12px;
+	line-height:  18px;
+}
+
+.modal {
+	color: #323232;
+
+	background-color: #f8f7f3;
+}
+
+.modal h3 {
+	font-size: 24px;
+	font-weight: ;
+	color: #323232;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form text-area {
+	font: inherit;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+	font-weight: 400;
+
+	background-color: #ffffff;
+	border: 1px solid #d3d3d2;
+}
+
+.button-login-hover {
+	color: #323232;
+
+	background-color: #f8f7f4;
+}
+
+.login-link-form input[type="email"],
+.login-link-form input[type="password"] {
+	font-size: 14px;
+	line-height: 24px;
+	color: #999999;
+
+	background-color: #ffffff;
+	border: 1px solid #d3d3d2;
+}
+
+.password-info a {
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #323232;
+	text-decoration: underline;
+}
+
+.password-info a:hover,
+.password-indo a:active {
+	color: #e84d37;
+}
+
+.button-search-hover {
+	color: #323232;
+
+	background-color: #f8f7f4;
+}
+
+.search-link-form input[type="search"] {
+	font-size: 14px; 
+	line-height: 24px;
+	color: #999999;
+
+	background-color: #ffffff;
+	border: 1px solid #d3d3d2;
+}
+
+input[type="email"]:hover,
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="search"]:hover,
+text-area:hover {
+	border: 2px solid #c7c6c5;
+}
+
+/*------Внутренняя страница---*/
+
+.inner-page {
+	font-family: "Roboto", Arial, sans-serif;
+}
+
+.breadcrumbs  {
+	font-size: 14px;
+	line-height: 16px;
+	color: #ffffff;
+	font-weight: 400;
+	list-style: none;
+}
+
+.breadcrumbs a {
+	font-size: 14px;
+	line-height: 16px;
+	color: #ffffff;
+	font-weight: 400;
+	text-decoration: underline;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+	color: #ffbc9e;
+}
+
+.inner-container h1 {
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.filtres {
+	font-weight: 400;
+}
+
+select {
+	color: #ffffff;
+	background-color: #9db1a5;
+}
+
+select:hover {
+	color: #323232;
+}
+
+.filter-button {
+	font-size: 16px;
+	line-height: 18px;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	background-color: #9cb0a4;
+}
+
+.filter-button:hover {
+	color: #323232;
+	background-color: #ffffff;
+}
+
+.filter-button:active {
+	background-color: #eaeaea;
+}
+
+.pagination-list {
+	list-style: none;
+}
+
+.pagination-list a {
+	color: #ffffff;
+}
+
+.pagination-item-current a {
+	color: #323232;
+	background-color: #ffffff;
+}
+
+
+.pagination-list a:hover {
+	background-color: #9db1a5;
+}
+
+.pagination-list a:active {
+	color: #323232;
+	background-color: #ffffff;
+}

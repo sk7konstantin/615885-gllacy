@@ -1,8 +1,12 @@
 <!DOCTYPE html>
- <html lang="ru">
+<html lang="ru">
     <head>
     	<meta charset="utf-8">
-    	<title>Каталог Глейси</title>
+    	<title>Главная Глейси</title>
+    	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    	<link rel="stylesheet" href="css/normalize.css">
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
  		<header class="main-header">
@@ -10,7 +14,7 @@
  				<a class="main-header-logo">
  					<img src="img/index-logo.png" width="154" height="64" alt="логотип Глейси">
  				</a>
- 				<ul class="site-navigation-list">
+ 				<ul class="site-navigation">
  					<li class="site-navigation-item">
  						<a href="">Каталог</a>
  						<!--Появляется при наведении-->
@@ -99,16 +103,14 @@
  				<h2 class="visually-hidden">Акция</h2>
  
  				<ul class="banner-list">
- 					<li class="banner-item">
- 						<img src="img/..." alt="малиновый фон" width="560" height="229">
- 						<h3>Малинка даром</h3>
+ 					<li class="banner-item-crimson">
+ 						<h3>Малинка даром!</h3>
  						<p class="banner-item-text">
  							При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
  						</p>
  						<a href="" class="button">Хочу варенье!</a>
  					</li>
- 					<li class="banner-item">
- 						<img src="img/..." alt="шоколадный фон" width="560" height="229">
+ 					<li class="banner-item-chocolate">
  						<h3>Шоколадки даром!</h3>
  						<p class="banner-item-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
  						<a href="" class="button">Хочу шоколадки!</a>
@@ -122,8 +124,8 @@
  
  				<ul class="product-list">
  					<li class="product-item">
- 						<a class="product-photo" href="#">
  							<img src="img/ice-product1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+ 						<a class="product-link" href="#">
  							<p class="product-text">
  								Сливочное с апельсиновым джемом и цитрусовой стружкой
 							</p>
@@ -133,8 +135,8 @@
  						</p>
  					</li>
  					<li class="product-item">
- 						<a class="product-photo" href="">
 							<img src="img/ice-product2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+						<a class="product-link" href="#">
  							<p class="product-text">
  								Сливочно-кофейное с кусочками шоколада
  							</p>
@@ -144,8 +146,8 @@
  						</p>
  					</li>
  					<li class="product-item">
- 						<a class="product-photo">
  							<img src="img/ice-product3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+ 						<a class="product-link" href="#">
  							<p class="product-text">
  								Сливочно-клубничное с присыпкой из белого шоколада
  							</p>
@@ -155,8 +157,8 @@
  						</p>
  					</li>
  					<li class="product-item">
- 						<a class="product-photo">
  							<img src="img/ice-product4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+ 						<a class="product-link" href="#">
  							<p class="product-text">
  								Сливочное крем-брюле с карамельной подливкой
  							</p>
@@ -238,12 +240,12 @@
  					<p class="contact-info-address">
  						Адрес главного офиса<br>
  						и офлайн-магазина:<br>
- 						<b>ул. Большая Конюшенная<br>
- 						19/8, Санкт-Петербург</b>
+ 						<span>ул. Большая Конюшенная<br>
+ 						19/8, Санкт-Петербург</span>
  					</p>
  					<p class="contact-info-tel">
  						Для заказов по телефону:<br>
- 						<b>8 812 450-25-25</b><br>
+ 						<span>8 812 450-25-25</span><br>
  						(с 10 до 20 ежедневно)
  					</p>
  					<button class="button" type="button">Форма обратной связи</button>

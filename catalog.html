@@ -3,8 +3,12 @@
     <head>
     	<meta charset="utf-8">
     	<title>Каталог Глейси</title>
+    	<link rel="stylesheet" href="css/normalize.css">
+    	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
   	</head>
-  	<body>
+  	<body class="inner-page">
 		<header class="main-header">
 			<nav class="main-navigation">
 				<a class="main-header-logo" href="index.html">
@@ -71,7 +75,7 @@
 			</nav>
 		</header>
 
-		<main class="container">
+		<main class="inner-container">
 			<ul class="breadcrumbs">
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="">Каталог</a></li>
@@ -82,21 +86,19 @@
 			<section class="filtres">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form class="filter" action="https://echo.htmlacademy.ru" method="get">
-					<fieldset>
-						<legend>Сортировка:</legend>
+					<div>
 						<label>Сортировка:</label>
 						<select>
 							<option value="popularity">по популярности</option>
 							<option value="price">по цене</option>
 						</select>
-					</fieldset>
-					<fieldset>
-						<legend>Цена: 100 руб. - 500 руб.</legend>
-						100 руб.<input type="range" name="range">500 руб.
-					</fieldset>
-					<fieldset>
-						<legend>Жирность:</legend>
-						<ul>
+					</div>
+					<div>
+						100 руб.<input type="range" name="range" min="100" max="500" step="50">500 руб.
+					</div>
+					<div>
+						<label for="percent">Жирность:</label>
+						<ul id="percent">
 							<li class="filter-option">
 								<input class="visually-hidden" type="radio" id="filter-percent-0" name="creamy">
 								<label for="filter-percent-0">0%</label>
@@ -114,10 +116,10 @@
 								<label for="filter-percent-after-30">выше 30%</label>
 							</li>
 						</ul>
-					</fieldset>
-					<fieldset>
-						<legend>Наполнители:</legend>
-						<ul>
+					</div>
+					<div>
+						<label for="fillers">Наполнители:</label>
+						<ul id="fillers">
 							<li class="filter-option">
 								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-chocolate" name="chocolate" checked="">
 								<label for="filter-chocolate">Шоколадные</label>
@@ -139,8 +141,8 @@
 								<label for="filter-jam">джемы</label>
 							</li>
 						</ul>
-					</fieldset>
-					<button class="filter-button" type="button">Применить</button>
+					</div>
+					<button class="filter-button" type="submit">Применить</button>
 				</form>
 			</section>
 
@@ -283,13 +285,16 @@
 					</li>
 				</ul>
 				<ul class="pagination-list">
-					<li class="pagination-item pagination-item-current">1</li>
-					<li class="pagination-item"><a href="">2</a></li>
-					<li class="pagination-item"><a href="">3</a></li>
-					<li class="pagination-item"><a href="">4</a></li>
-					<li class="pagination-item"><a href="">5</a></li>
 					<li>
-						<button class="pagination-button-next" type="button">next</button>
+						<button class="pagination-button pagination-button-prev" type="button">prev</button>
+					</li>
+					<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+					<li class="pagination-item"><a href="#">2</a></li>
+					<li class="pagination-item"><a href="#">3</a></li>
+					<li class="pagination-item"><a href="#">4</a></li>
+					<li class="pagination-item"><a href="#">5</a></li>
+					<li>
+						<button class="pagination-button pagination-button-next" type="button">next</button>
 					</li>
 				</ul>
 			</section>
