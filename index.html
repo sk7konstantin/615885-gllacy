@@ -11,13 +11,14 @@
     <body>
  		<header class="main-header">
  			<nav class="main-navigation">
- 				<a class="main-header-logo">
- 					<img src="img/index-logo.png" width="154" height="64" alt="логотип Глейси">
- 				</a>
- 				<ul class="site-navigation">
- 					<li class="site-navigation-item">
- 						<a href="">Каталог</a>
- 						<!--Появляется при наведении-->
+                <div class="container">
+ 				    <a class="main-header-logo">
+ 					    <img src="img/index-logo.png" width="154" height="64" alt="логотип Глейси">
+ 				    </a>
+ 				    <ul class="site-navigation">
+ 					    <li class="site-navigation-item">
+ 						    <a href="">Каталог</a>
+ 						    <!--Появляется при наведении-->
  						<ul class="catalog-navigation-hover">
  							<li><a href="">Новинки</a></li>
  							<li><a href="">Сливочные</a></li>
@@ -25,58 +26,61 @@
  							<li><a href="">Фруктовый лед</a></li>
  							<li><a href="">Мелорин</a></li>
  						</ul>
- 					</li>
- 					<li class="site-navigation-item">
- 						<a href="">Доставка и оплата</a>
- 					</li>
- 					<li class="site-navigation-item">
- 						<a href="">О Компании</a>
- 					</li>
- 				</ul>
- 				<ul class="user-navigation">
- 					<li class="search-link">
- 						<a href="#">Поиск</a>
- 						<!--Появляется при наведении-->
- 						<section class="button-search-hover">
- 							<form class="search-link-form" action="https://htmlacademy.ru" method="get">
- 								<label class="visually-hidden" for="button-search">Поиск</label>
- 								<input type="search" id="button-search" name="search value="search" placeholder="Что ищем?">
- 							</form>
- 						</section>
- 					</li>
- 					<li class="login-link">
- 						<a class="login-link" href="#">Вход</a>
- 						<!--Появляется при наведении-->
- 						<section class="button-login-hover">
- 							<form class="login-link-form" action="https://echo.htmlacademy.ru" method="post">
- 								<p>
- 									<label class="visually-hidden" for="button-email">Электронная почта</label>
- 									<input class="login-link-email" type="email" id="button-email" name="email" placeholder="Электронная почта">
- 								</p>
- 								<p>
- 									<label class="visually-hidden" for="button-password">Пароль</label>
- 									<input class="login-link-password" type="password" id="button-password" name="password" placeholder="Пароль">
- 								</p>
- 								<button class="button button-login-link" type="submit" name="button-link">Войти</button>
- 								<p class="password-info">
- 									<a href="#">Забыли пароль?</a><br>
- 									<a href="#">Новая регистрация</a>
- 								</p>
- 							</form>
- 						</section>
- 					</li>
- 					<li class="basket-link">
- 						<a href="#">Пусто</a>
- 					</li>
- 				</ul>
- 				<p class="main-navigation-info">с 10 до 20, ежедневно<br>
- 			   		8 812 450-25-25
- 				</p>
+ 					    </li>
+ 					    <li class="site-navigation-item">
+ 						    <a href="">Доставка и оплата</a>
+ 					    </li>
+ 					    <li class="site-navigation-item">
+ 						    <a href="">О Компании</a>
+ 					    </li>
+ 				    </ul>
+ 				    <ul class="user-navigation">
+ 					    <li class="search-link">
+ 						    <a href="#">Поиск</a>
+ 						 <!--Появляется при наведении-->
+ 						    <section class="button-search-hover">
+ 							    <form class="search-link-form" action="https://htmlacademy.ru" method="get">
+ 								    <label class="visually-hidden" for="button-search">Поиск</label>
+ 								    <input type="search" id="button-search" name="search value="search" placeholder="Что ищем?">
+ 							    </form>
+ 						    </section>
+ 					    </li>
+ 					    <li class="login-link">
+ 						    <a class="login-link" href="#">Вход</a>
+ 						    <!--Появляется при наведении-->
+ 						    <section class="button-login-hover">
+ 							    <form class="login-link-form" action="https://echo.htmlacademy.ru" method="post">
+ 								    <p>
+ 									    <label class="visually-hidden" for="button-email">Электронная почта</label>
+ 									    <input class="login-link-email" type="email" id="button-email" name="email" placeholder="Электронная почта">
+ 								    </p>
+ 								    <p>
+ 									    <label class="visually-hidden" for="button-password">Пароль</label>
+ 									    <input class="login-link-password" type="password" id="button-password" name="password" placeholder="Пароль">
+ 								    </p>
+ 								    <button class="button button-login-link" type="submit" name="button-link">Войти</button>
+ 								    <p class="password-info">
+ 									    <a href="#">Забыли пароль?</a><br>
+ 									    <a href="#">Новая регистрация</a>
+ 								    </p>
+ 							    </form>
+ 						    </section>
+ 					    </li>
+ 					    <li class="basket-link">
+ 						    <a href="#">Пусто</a>
+ 					    </li>
+ 				    </ul>
+                </div>
  			</nav>
  		</header>
  
- 		<main class="container">
- 		
+ 		<main>
+ 		    <div class="container">
+            <p class="main-navigation-info">
+                    с 10 до 20, ежедневно<br>
+                   8 812 450-25-25
+            </p>
+
  			<section class="slider">
   
  				<h1 class="visually-hidden">Слайдер с мороженным</h1>
@@ -103,14 +107,14 @@
  				<h2 class="visually-hidden">Акция</h2>
  
  				<ul class="banner-list">
- 					<li class="banner-item-crimson">
+ 					<li class="banner-item banner-item-crimson">
  						<h3>Малинка даром!</h3>
  						<p class="banner-item-text">
  							При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
  						</p>
  						<a href="" class="button">Хочу варенье!</a>
  					</li>
- 					<li class="banner-item-chocolate">
+ 					<li class="banner-item banner-item-chocolate">
  						<h3>Шоколадки даром!</h3>
  						<p class="banner-item-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
  						<a href="" class="button">Хочу шоколадки!</a>
@@ -125,47 +129,43 @@
  				<ul class="product-list">
  					<li class="product-item">
  							<img src="img/ice-product1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
- 						<a class="product-link" href="#">
  							<p class="product-text">
  								Сливочное с апельсиновым джемом и цитрусовой стружкой
 							</p>
-						</a>
 						<p class="product-price">
  							310 Р<span>/кг</span>
  						</p>
+                        <a class="product-link" href="#"></a>
  					</li>
  					<li class="product-item">
 							<img src="img/ice-product2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-						<a class="product-link" href="#">
  							<p class="product-text">
  								Сливочно-кофейное с кусочками шоколада
  							</p>
- 						</a>
- 						<p class="product-price">
- 							380 Р<span>/кг</span>
- 						</p>
+ 						    <p class="product-price">
+ 							    380 Р<span>/кг</span>
+ 						    </p>
+                        <a class="product-link" href="#"></a></a>
  					</li>
  					<li class="product-item">
  							<img src="img/ice-product3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
- 						<a class="product-link" href="#">
  							<p class="product-text">
  								Сливочно-клубничное с присыпкой из белого шоколада
  							</p>
- 						</a>
  						<p class="product-price">
  							355 Р<span>/кг</span>
  						</p>
+                        <a class="product-link" href="#"></a></a>
  					</li>
  					<li class="product-item">
  							<img src="img/ice-product4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
- 						<a class="product-link" href="#">
  							<p class="product-text">
  								Сливочное крем-брюле с карамельной подливкой
  							</p>
- 						</a>
  						<p class="product-price">
  							415 Р<span>/кг</span>
  						</p>
+                        <a class="product-link" href="#"></a></a>
  					</li>
  				</ul>
  			</section>
@@ -198,7 +198,7 @@
  					</li>
 				</ul>
  			</section>
- 
+            <div class="index-column">
 			<article class="news">
  			
  				<h2 class="visually-hidden">Новости</h2>
@@ -229,7 +229,8 @@
  					<button class="button" type="submit">Отправить</button>
  				</form>
  			</section>
- 
+            </div>
+            </div>
  			<section class="map">
 
  				<h2 class="visually-hidden">Карта расположения магазина</h2>
@@ -254,7 +255,7 @@
  		</main>
  
  		<footer class="main-footer">
- 
+            <div class="container">
  			<div class="footer-social">
  				<ul class="footer-social-list">
  					<li class="footer-social-item">
@@ -297,6 +298,7 @@
  					<a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy 2017</a>
  				</p>
  			</section>
+            </div>
  		</footer>
  
  		<!--Модальные окна-->
