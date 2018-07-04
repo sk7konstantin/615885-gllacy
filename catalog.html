@@ -17,11 +17,12 @@
 					</a>
 					<ul class="site-navigation">
 						<li class="site-navigation-item site-navigation-current">
-							<a href="">Каталог</a>
+							<a class="no-hover">Каталог</a>
+
 							<!--Появляется при наведении-->
 							<ul class="catalog-navigation-hover">
 								<li><a href="">Новинки</a></li>
-								<li><a href="">Сливочные</a></li>
+								<li class="catalog-navigation-current"><a href="">Сливочные</a></li>
 								<li><a href="">Щербеты</a></li>
 								<li><a href="">Фруктовый лед</a></li>
 								<li><a href="">Мелорин</a></li>
@@ -43,13 +44,16 @@
 							<span class="visually-hidden">Поиск</span>
 							</a>
  							<!--Появляется при наведении-->
- 							<section class="button-search-hover">
- 								<form class="search-link-form" action="https://htmlacademy.ru" method="get">
- 									<label class="visually-hidden" for="button-search">Поиск
- 									</label>
- 									<input type="search" id="button-search" name="search value="search" placeholder="Что ищем?">
- 								</form>
- 							</section>
+ 							 <div class="hover-search"> 
+ 						    <section class="button-search-hover">
+ 							    <form class="search-link-form" action="https://echo.htmlacademy.ru" method="get">
+ 								    <label class="visually-hidden" for="button-search">
+                                        Поиск
+                                    </label>
+ 								    <input type="text" id="button-search" name="search" placeholder="Что ищем?">
+ 							    </form>
+ 						    </section>
+                            </div>
  						</li>
  						<li class="login-link">
  							<a class="login-link-user" href="#">
@@ -62,23 +66,28 @@
  							Вход
  							</a>
  							<!--Появляется при наведении-->
- 							<section class="button-login-hover">
- 								<form class="login-link-form" action="https://echo.htmlacademy.ru" method="post">
- 									<p>
- 										<label class="visually-hidden" for="button-email">Электронная почта</label>
- 										<input class="login-link-email" type="email" id="button-email" name="email" placeholder="Электронная почта">
- 									</p>
- 									<p>
- 										<label class="visually-hidden" for="button-password">Пароль</label>
- 										<input class="login-link-password" type="password" id="button-password" name="password" placeholder="Пароль">
- 									</p>
- 									<button class="button button-login-link" type="submit" name="button-link">Войти</button>
- 									<p class="password-info">
- 										<a href="#">Забыли пароль?</a><br>
- 										<a href="#">Новая регистрация</a>
- 									</p>
- 								</form>
- 							</section>
+ 							<div class="hover-link">
+ 						    <section class="button-login-hover">
+ 							    <form class="login-link-form" action="https://echo.htmlacademy.ru" method="post">
+ 								    <p>
+ 									    <label class="visually-hidden" for="button-email">Электронная почта</label>
+ 									    <input class="login-link-email" type="email" id="button-email" name="email" placeholder="Электронная почта">
+ 								    </p>
+ 								    <p>
+ 									    <label class="visually-hidden" for="button-password">Пароль</label>
+ 									    <input class="login-link-password" type="password" id="button-password" name="password" placeholder="Пароль">
+                                    </p>
+                                    <div class="login-link-footer">
+                                        <button class="button button-login-link" type="submit" name="button-link">Войти</button>
+                                        <p class="password-info">
+                                            <a href="#">Забыли пароль?</a>
+                                            <a href="#">Новая регистрация</a>
+                                        </p>
+                                    </div>
+                                </form>
+ 						    </section>
+                            </div>
+ 					    </li>
  						</li>
 						<li class="basket basket-inner">
 							<a class="basket-link" href="#">
@@ -92,6 +101,29 @@
                                 </svg>
 							2 товара
 							</a>
+
+							<!--Товары добавлены в корзину-->
+
+							<div class="basket-hover">
+								<table class="basket-product">
+									<tr class="basket-product-row">
+										<td class="basket-product-close"></td>
+										<td class="basket-product-text basket-product-text-1"><a>Пломбир с апельсиновым джемом</a></td>
+										<td>1,5кг x 200 руб.</td>
+										<td>300 руб.</td>
+									</tr>
+									<tr class="basket-product-row">
+										<td class="basket-product-close"></td>
+										<td class="basket-product-text basket-product-text-2"><a>Клубничный пломбир с присыпкой из белого шоколада</a></td>
+										<td>1,5кг x 300 руб.</td>
+										<td>450 руб.</td>
+									</tr>
+									<tr>
+										<td class="basket-product-price" colspan="4">Итого: 750 руб.</td>
+									</tr>
+								</table>
+								<a class="button basket-hover-button">Оформить заказ</a>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -101,7 +133,7 @@
 		<main class="inner-container container">
 			<div class="main-navigation-info">
                 <p class="main-navigation-info-time">
-                    с 10 до 20, ежедневно
+                    С 10 до 20, ежедневно
                 </p>
                 <p class="main-navigation-info-tel">
                     8 812 450-25-25
@@ -109,8 +141,8 @@
             </div>
 
 			<ul class="breadcrumbs">
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="">Каталог</a></li>
+				<li><a href="index.html">Главная</a><span>&#187;</span></li>
+				<li><a href="">Каталог</a><span>&#187;</span></li>
 				<li class="breadcrumbs-current">Сливочное</li>
 			</ul>
 			<h1 class="page-title">Сливочное мороженое</h1>
@@ -119,7 +151,7 @@
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form class="filter" action="https://echo.htmlacademy.ru" method="get">
 					<div class="sorting">
-						<label><p class="filter-legend">Сортировка:<p>
+						<label><p class="filter-legend">Сортировка:</p>
 							<div>
 							<select>
 								<option value="popularity">по популярности</option>
@@ -131,7 +163,7 @@
 						</label>
 					</div>
 					<div class="range-filter">
-						<p class="filter-legend">Цена: 100 руб. - 500 руб.</p>
+						<p class="filter-legend">Цена: 100 руб.  - 500 руб.</p>
 						<div class="range-controls">
 							<div class="scale">
 								<div class="bar"></div>
@@ -205,7 +237,7 @@
 							Сливочное с апельсиновым джемом и цитрусовой стружкой
 						</p>
 						<p class="product-price">
-							310 &#8381;<span>/кг</span>
+							310<span class="product-price-unicode">&#8381;</span><span>/кг</span>
 						</p>
 						<a class="product-link" href="#"></a>
 					</li>
@@ -215,7 +247,7 @@
 							Сливочно-кофейное с кусочками шоколада
 						</p>
 						<p class="product-price">
-							380 &#8381;<span>/кг</span>
+							380<span class="product-price-unicode">&#8381;</span><span>/кг</span>
 						</p>
 						<a class="product-link" href="#"></a>
 					</li>
@@ -225,7 +257,7 @@
 							Сливочно-клубничное с присыпкой из белого шоколада
 						</p>
 						<p class="product-price">
-							355 &#8381;<span>/кг</span>
+							355<span class="product-price-unicode">&#8381;</span><span>/кг</span>
 						</p>
 						<a class="product-link" href="#"></a>
 					</li>
@@ -235,7 +267,7 @@
 							Сливочное крем-брюле с карамельной подливкой
 						</p>
 						<p class="product-price">
-							415 &#8381;<span>/кг</span>
+							415<span class="product-price-unicode">&#8381;</span><span>/кг</span>
 						</p>
 						<a class="product-link" href="#"></a>
 					</li>
@@ -245,7 +277,7 @@
 							Сливочное с брусничным джемом
 						</p>
 						<p class="product-price">
-							325 &#8381;<span>/кг</span>
+							325<span class="product-price-unicode">&#8381;</span><span>/кг</span>
 						</p>
 						<a class="product-link" href="#"></a>
 					</li>
@@ -255,7 +287,7 @@
 							Сливочно-черничное с цельными ягодами черники
 						</p>
 						<p class="product-price">
-							410 &#8381;<span>/кг</span>
+							410<span class="product-price-unicode">&#8381;</span><span>/кг</span>
 						</p>
 						<a class="product-link" href="#"></a>
 					</li>
@@ -265,7 +297,7 @@
 							Сливочно-лимонное с карамельной присыпкой
 						</p>
 						<p class="product-price">
-							375 &#8381;<span>/кг</span>
+							375<span class="product-price-unicode">&#8381;</span><span>/кг</span>
 						</p>
 						<a class="product-link" href="#"></a>
 					</li>
@@ -275,7 +307,7 @@
 							Сливочное с шоколадной стружкой
 						</p>
 						<p class="product-price">
-							320 &#8381;<span>/кг</span>
+							320<span class="product-price-unicode">&#8381;</span><span>/кг</span>
 						</p>
 						<a class="product-link" href="#"></a>
 					</li>
@@ -285,7 +317,7 @@
 							Сливочно-ванильное с кусочками шоколада
 						</p>
 						<p class="product-price">
-							440 &#8381;<span>/кг</span>
+							440<span class="product-price-unicode">&#8381;</span><span>/кг</span>
 						</p>
 						<a class="product-link" href="#"></a>
 					</li>
@@ -295,7 +327,7 @@
 							Сливочно с ментоловым сиропом
 						</p>
 						<p class="product-price">
-							435 &#8381;<span>/кг</span>
+							435<span class="product-price-unicode">&#8381;</span><span>/кг</span>
 						</p>
 						<a class="product-link" href="#"></a>
 					</li>
@@ -305,7 +337,7 @@
 							Сливочное с кусочками черного шоколада
 						</p>
 						<p class="product-price">
-							355 &#8381;<span>/кг</span>
+							355<span class="product-price-unicode">&#8381;</span><span>/кг</span>
 						</p>
 						<a class="product-link" href="#"></a>
 					</li>
@@ -315,29 +347,36 @@
 							Сливочное с мятным сиропом
 						</p>
 						<p class="product-price">
-							420 &#8381;<span>/кг</span>
+							420<span class="product-price-unicode">&#8381;</span><span>/кг</span>
 						</p>
 						<a class="product-link" href="#"></a>
 					</li>
 				</ul>
 
 				<div class="pagination">
-				<button class="pagination-button pagination-button-prev" type="button">
-				<span class="visually-hidden">prev</span>
-				</button>
+				
+				<a class="pagination-toggle pagination-toggle-prev pagination-disabled">prev</a>
 
 				<ul class="pagination-list">
-					<li class="pagination-item pagination-item-current">1
+					<li class="pagination-item pagination-item-current">
+						<a>1</a>
 					</li>
-					<li class="pagination-item"><a href="#">2</a></li>
-					<li class="pagination-item"><a href="#">3</a></li>
-					<li class="pagination-item"><a href="#">4</a></li>
-					<li class="pagination-item"><a href="#">5</a></li>
+					<li class="pagination-item">
+						<a href="#">2</a>
+					</li>
+					<li class="pagination-item">
+						<a href="#">3</a>
+					</li>
+					<li class="pagination-item">
+						<a href="#">4</a>
+					</li>
+					<li class="pagination-item">
+						<a href="#">5</a>
+					</li>
 				</ul>
 
-				<button class="pagination-button pagination-button-next" type="button">
-				<span class="visually-hidden">next</span>
-				</button>
+				<a class="pagination-toggle pagination-toggle-next">next</a>
+				
 				</div>
 			</section>
 		</main>
