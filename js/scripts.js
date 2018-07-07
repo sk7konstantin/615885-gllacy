@@ -4,22 +4,26 @@ var close = document.querySelector(".modal-close");
 var login = popup.querySelector("[name=login]");
 var email = popup.querySelector("[name=email]");
 var form = popup.querySelector("form");
+var overlay = document.querySelector(".modal-overlay");
 
 link.addEventListener ("click", function (evt) {
 	evt.preventDefault ();
 	popup.classList.add("modal-show");
+	overlay.classList.add("modal-overlay-show")
 	login.focus ();
 });
 
 close.addEventListener ("click", function(evt) {
 	evt.preventDefault ();
 	popup.classList.remove("modal-show");
+	overlay.classList.remove("modal-overlay-show")
 });
 
 window.addEventListener("keydown", function (evt) {
 	if (evt.keyCode === 27) {
 		if (popup.classList.contains("modal-show")) {
 			popup.classList.remove("modal-show");
+			overlay.classList.remove("modal-overlay-show");
 		}
 	}
 });

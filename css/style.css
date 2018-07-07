@@ -26,9 +26,9 @@ main {
 }
 
 .slider-container {
-    -webkit-transition: background-image .9s ease, background-color .7s ease;
-         -o-transition: background-image .9s ease, background-color .7s ease;
-            transition: background-image .9s ease, background-color .7s ease;
+    -webkit-transition: background-image .4s ease, background-color .7s ease;
+         -o-transition: background-image .4s ease, background-color .7s ease;
+            transition: background-image .4s ease, background-color .7s ease;
 
     background-color: #849d8f;
     background-image: url('../img/ice-cream1-2.png');
@@ -159,7 +159,7 @@ main {
     position: relative;
 }
 
-.site-navigation > li > a {
+.site-navigation-item > a {
     padding: 7px 13px 7px;
 
     border-radius: 20px;
@@ -173,7 +173,7 @@ main {
     margin-left: auto;
 }
 
-.user-navigation > li > a {
+.user-navigation-item > a {
     position: relative;
 
     vertical-align: center;
@@ -394,10 +394,10 @@ main {
     background-color: #d07058;
 }
 
-.site-navigation > li > a[href]:hover,
-.site-navigation > li > a[href]:focus,
-.user-navigation > li > a:hover,
-.user-navigation > li > a:focus {
+.site-navigation-item > a[href]:hover,
+.site-navigation-item > a[href]:focus,
+.user-navigation-item > a:hover,
+.user-navigation-item > a:focus {
     text-decoration: none;
 
     color: #333;
@@ -606,14 +606,14 @@ td.basket-product-price {
     background-color: rgba(208, 112, 88, 1);
 }
 
-.catalog-navigation-hover li:first-child a {
+.catalog-navigation-item:first-child a {
     font-weight: bold;
 
     padding-top: 13px;
     padding-bottom: 13px;
 }
 
-.catalog-navigation-hover li:first-child::after {
+.catalog-navigation-item:first-child::after {
     position: absolute;
     bottom: 0;
     left: 11px;
@@ -626,7 +626,7 @@ td.basket-product-price {
     background-color: rgba(0, 0, 0, .2);
 }
 
-.catalog-navigation-hover li:last-child a {
+.catalog-navigation-item:last-child a {
     padding-bottom: 13px;
 }
 
@@ -905,7 +905,7 @@ td.basket-product-price {
 
 div.product-link {
     position: absolute;
-    z-index: 10;
+    z-index: 0;
     top: -5px;
     left: -10px;
 
@@ -1395,35 +1395,32 @@ footer .container {
 /* Модальные окна */
 
 @-webkit-keyframes bounce {
-    0%{-webkit-transform: translateY(-2000px); transform: translateY(-2000px)}
-    70%{-webkit-transform: translateY(30px); transform: translateY(30px)}
-    90%{-webkit-transform: translate(-50px); transform: translate(-50px)}
-    100%{-webkit-transform: translate(0); transform: translate(0)}
-    0%{-webkit-transform: rotate(0deg); transform: rotate(0deg)}
+    0%{-webkit-transform: translateY(-2000px) rotate(0deg); transform: translateY(-2000px) rotate(0deg)}
     20%{-webkit-transform: rotate(15deg); transform: rotate(15deg)}
     40%{-webkit-transform: rotate(-15deg); transform: rotate(-15deg)}
     60%{-webkit-transform: rotate(15deg); transform: rotate(15deg)}
+    70%{-webkit-transform: translateY(30px); transform: translateY(30px)}
     80%{-webkit-transform: rotate(-15deg); transform: rotate(-15deg)}
-    100%{-webkit-transform: rotate(0deg); transform: rotate(0deg)}
+    90%{-webkit-transform: translate(-50px); transform: translate(-50px)}
+    100%{-webkit-transform: translate(0) rotate(0deg); transform: translate(0) rotate(0deg)}
 }
 
 @keyframes bounce {
-    0%{-webkit-transform: translateY(-2000px); transform: translateY(-2000px)}
-    70%{-webkit-transform: translateY(30px); transform: translateY(30px)}
-    90%{-webkit-transform: translate(-50px); transform: translate(-50px)}
-    100%{-webkit-transform: translate(0); transform: translate(0)}
-    0%{-webkit-transform: rotate(0deg); transform: rotate(0deg)}
+    0%{-webkit-transform: translateY(-2000px) rotate(0deg); transform: translateY(-2000px) rotate(0deg)}
     20%{-webkit-transform: rotate(15deg); transform: rotate(15deg)}
     40%{-webkit-transform: rotate(-15deg); transform: rotate(-15deg)}
     60%{-webkit-transform: rotate(15deg); transform: rotate(15deg)}
+    70%{-webkit-transform: translateY(30px); transform: translateY(30px)}
     80%{-webkit-transform: rotate(-15deg); transform: rotate(-15deg)}
-    100%{ -webkit-transform: rotate(0deg); transform: rotate(0deg)}
+    90%{-webkit-transform: translate(-50px); transform: translate(-50px)}
+    100%{-webkit-transform: translate(0) rotate(0deg); transform: translate(0) rotate(0deg)}
+    
 }
 
 
 .modal-feedback {
     position: fixed;
-    z-index: 11;
+    z-index: 12;
     top: 200px;
     left: 50%;
 
@@ -1447,6 +1444,20 @@ footer .container {
             animation-name: bounce;
     -webkit-animation-duration: .4s;
             animation-duration: .4s;
+}
+
+.modal-overlay {
+	position: fixed;
+	display: none;
+	z-index: 11;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+.modal-overlay-show {
+	display: block;
 }
 
 .modal-feedback h3 {
@@ -1844,19 +1855,19 @@ select::-ms-expand {
     width: 25px;
     height: 25px;
     margin-right: 8px;
+    vertical-align: center;
 
     content: '';
 
     background-image: url(../img/checkbox-off.svg);
     background-repeat: no-repeat;
     background-size: 20px 20px;
+    background-position: 0px;
 }
 
 .fillers input:checked ~ label::before {
-    top: -4px;
-
     background-image: url(../img/checkbox-on.svg);
-    background-size: 24px 24px;
+    background-size: 24px 20px;
 }
 
 
