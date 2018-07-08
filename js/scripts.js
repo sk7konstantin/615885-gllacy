@@ -28,6 +28,7 @@ window.addEventListener("keydown", function (evt) {
 	}
 });
 
+
 form.addEventListener ("submit", function (evt) {
 	if (!login.value || !email.value) {
 	evt.preventDefault ();

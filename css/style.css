@@ -2012,7 +2012,7 @@ select::-ms-expand {
 }
 
 .pagination-disabled {
-    opacity: .2;
+    opacity: .3;
 }
 
 .inner-container {
