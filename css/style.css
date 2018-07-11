@@ -79,7 +79,9 @@ body {
     text-shadow: 0 2px 5px rgba(160, 32, 11, .76);
 }
 
+.button:focus,
 .button:hover {
+	outline: none;
     background: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
     background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
     background:      -o-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
@@ -262,6 +264,12 @@ body {
     background-color: #f8f7f4;
     -webkit-box-shadow: 0 20px 20px 1px rgba(0, 0, 0, .4);
             box-shadow: 0 20px 20px 1px rgba(0, 0, 0, .4);
+}
+
+.user-navigation input:valid {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 .search-link-form input {
@@ -557,7 +565,7 @@ li.basket-inner a {
     background-repeat: no-repeat;
 }
 
-td.basket-product-price {
+.basket-hover .basket-product-price {
     font-size: 15px;
     font-weight: bold;
     line-height: 18px;
@@ -855,6 +863,7 @@ td.basket-product-price {
 .banner-item-text {
     margin: 0;
     padding: 0;
+    padding-bottom: 75px;
 }
 
 .banner-item {
@@ -874,7 +883,7 @@ td.basket-product-price {
 .banner-item-crimson {
     background-image: url('../img/crimson-bg.jpg');
     background-color: #c51642;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 .banner-item-chocolate {
@@ -882,7 +891,7 @@ td.basket-product-price {
 
     background-image: url('../img/chocolate-bg.jpg');
     background-color: #76554a;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 .button-banner {
@@ -1039,6 +1048,7 @@ div.product-link {
 
     margin: 0;
     padding: 0;
+    padding-bottom: 23px;
 
     list-style: none;
 
@@ -1052,17 +1062,21 @@ div.product-link {
 .features-item {
     width: 540px;
     margin-left: 20px;
+    margin-bottom: 6px;
 }
 
-.features-item:nth-of-type(3n),
+/*.features-item:nth-of-type(3n),
 .features-item:nth-of-type(4n) {
     margin-top: 6px;
+}*/
+
+.features-item:nth-of-type(2n) {
+    padding-right: 18px;
 }
 
-.features-item:nth-of-type(2n),
-.feauters-item:nth-of-type(4n) {
+/*.features-item:nth-of-type(2n) {
     margin-left: 0;
-}
+}*/
 
 .features-item-text {
 	font-weight: 400;
@@ -1076,11 +1090,12 @@ div.product-link {
     padding: 0;
 }
 
-.features-item-text-2,
+/*.features-item-text-2,
 .features-item-text-4 {
     margin-left: 37px;
     padding-right: 15px;
-}
+}*/
+
 
 .features-item-text::before {
     position: absolute;
@@ -1142,7 +1157,7 @@ div.product-link {
     border-radius: 15px;
     background-image: url('../img/news-bg.jpg');
     background-color: #fff;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 .news-list {
@@ -1174,6 +1189,7 @@ div.product-link {
     width: 285px;
     margin: 0;
     margin-left: 18px;
+    padding-bottom: 50px;
 }
 
 .news-list a {
@@ -1185,6 +1201,7 @@ div.product-link {
 }
 
 .news-list a:hover,
+.news-list a:focus,
 .news-list a:active {
     color: #e84d37;
 }
@@ -1208,7 +1225,7 @@ div.product-link {
 
 .distribution-wraper {
     width: 529px;
-    height: 144px;
+    min-height: 144px;
     margin: auto;
     padding: 30px 21px;
     padding-right: 0;
@@ -1253,6 +1270,12 @@ div.product-link {
 .distribution-form input:focus {
 	outline: none;
 	box-shadow: inset 0px 0px 0px 3px rgba(46, 136, 228, .6);
+}
+
+.distribution-form input:valid {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 .distribution-button {
@@ -1354,7 +1377,7 @@ div.product-link {
     color: #ffbc9e;
 }
 
-footer .container {
+.main-footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1433,8 +1456,10 @@ footer .container {
 }
 
 .provider-item {
-    min-width: 140px;
+    min-width: 110px;
     margin-bottom: 5px;
+    margin-right: 20px;
+
 }
 
 .provider-item-love a {
@@ -1489,6 +1514,11 @@ footer .container {
     
 }
 
+@keyframes shake {
+  0%,100% { transform: translateX(0); box-shadow: 0 0 10px 1px red; }
+  10%,30%,50%,70%,90% { transform: translateX(-10px); }
+  20%,40%,60%,80% { transform: translateX(10px); }
+}
 
 .modal-feedback {
     position: fixed;
@@ -1516,6 +1546,10 @@ footer .container {
             animation-name: bounce;
     -webkit-animation-duration: .4s;
             animation-duration: .4s;
+}
+
+.modal-error {
+	animation: shake 0.6s;
 }
 
 .modal-overlay {
@@ -1593,6 +1627,10 @@ footer .container {
 .feedback-form .feedback-comments:focus {
 	outline: none;
 	box-shadow: inset 0px 0px 0px 3px rgba(46, 136, 228, .6);
+}
+
+.feedback-form input:valid {
+	font-weight: 700;
 }
 
 .feedback-comments {
@@ -1720,7 +1758,7 @@ footer .container {
     margin-bottom: 41px;
 }
 
-form.filter {
+.filtres .filter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1754,17 +1792,20 @@ form.filter {
 
     -webkit-appearance: none;
     -moz-appearance: none;
+    -ms-appearance: none;
 }
 
 .sorting select::-ms-expand {
 	display: none;
 }
 
-select option {
+.filter option {
     color: #323232;
 }
 
-select:hover {
+.filter select:focus,
+.filter select:hover {
+	outline: none;
     color: #323232;
     background-image: url(../img/icon-select-open.svg);
     background-position: top 14px  right 15px;
@@ -1902,12 +1943,20 @@ select:hover {
 	opacity: 1;
 }
 
-.percent input[type='radio']:checked ~ label:before {
+.percent input[type="radio"]:checked + label::before {
     background-image: url('../img/radio-on.svg');
-    opacity: 1;
+    opacity: 0.7;
 }
 
-div.fillers {
+.percent input[type="radio"]:disabled + label::before{
+	opacity: 0.3;
+}
+
+.percent input[type="radio"]:focus + label::before {
+	opacity: 1;
+}
+
+.filter .fillers {
 	margin-right: 10px;
 }
 
@@ -1980,9 +2029,17 @@ div.fillers {
 	opacity: 1;
 }
 
-.fillers input:checked ~ label::before {
+.fillers input:checked + label::before {
     background-image: url(../img/checkbox-on.svg);
     background-size: 24px 20px;
+}
+
+.fillers input:disabled + label::before {
+	opacity: 0.3;
+}
+
+.fillers input:focus + label::before {
+	opacity: 1;
 }
 
 
@@ -2004,7 +2061,9 @@ div.fillers {
     align-self: flex-end;
 }
 
+.filter-button:focus,
 .filter-button:hover {
+	outline: none;
     color: #323232;
     background-color: #fff;
 }
