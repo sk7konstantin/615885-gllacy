@@ -167,6 +167,7 @@ body {
 
 .user-navigation {
     font-size: 14px;
+    line-height: 16px;
     font-weight: 500;
 
     min-width: 242px;
@@ -227,8 +228,9 @@ body {
 }
 
 .search-link svg {
-    top: 5px;
-    left: 6px;
+	position: absolute;
+	top: 6px;
+	left: 7px;
 }
 
 .hover-search {
@@ -450,6 +452,7 @@ body {
 
 li.basket-inner a {
     position: relative;
+    font-weight: 500;
 
     color: #323232;
     background-color: #fff;
@@ -736,7 +739,7 @@ td.basket-product-price {
 
 .slide-title {
     font-size: 60px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 60px;
 
     width: 700px;
@@ -857,13 +860,13 @@ td.basket-product-price {
 .banner-item {
     position: relative;
 
-    width: 540px;
-    height: 212px;
+    width: 542px;
+    min-height: 212px;
     margin-right: 26px;
     margin-bottom: 40px;
     padding-top: 15px;
     padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 18px;
 
     border-radius: 15px;
 }
@@ -906,13 +909,13 @@ td.basket-product-price {
     position: relative;
 
     width: 270px;
-    margin-bottom: 43px;
+    margin-bottom: 40px;
     margin-right: 22px;
 
     text-align: center;
 }
 
-.product-item:nth-child(4n) {
+.product-item:nth-of-type(4n) {
 	margin-right: 0;
 }
 
@@ -943,6 +946,7 @@ div.product-link {
     padding-bottom: 20px;
 
     background-color: rgba(255, 255, 255, .2);
+    box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .button-product {
@@ -961,18 +965,22 @@ div.product-link {
 
 .product-price {
     font-size: 45px;
+    line-height: 13px;
     font-weight: bold;
 
     position: absolute;
-    top: 178px;
+    top: 180px;
     left: 0;
 }
 
 .product-text {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
 
     margin: 0;
-    margin-top: 13px;
-    padding: 0 8px;
+    margin-top: 11px;
+    padding: 0 7px;
 }
 
 .product-text a {
@@ -1012,7 +1020,7 @@ div.product-link {
     font-weight: 500;
 
     margin: 0;
-    margin-top: 25px;
+    margin-top: 23px;
     margin-bottom: 3px;
     margin-right: 20px;
     margin-left: 20px;
@@ -1117,7 +1125,7 @@ div.product-link {
     display: -ms-flexbox;
     display: flex;
 
-    margin-bottom: 40px;
+    margin-bottom: 39px;
 
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -1152,8 +1160,8 @@ div.product-link {
     line-height: 22px;
 
     margin: 0;
-    margin-top: 25px;
-    margin-bottom: 5px;
+    margin-top: 24px;
+    margin-bottom: 3px;
     margin-left: 20px;
     padding: 0;
 
@@ -1202,7 +1210,7 @@ div.product-link {
     width: 529px;
     height: 144px;
     margin: auto;
-    padding: 33px 21px;
+    padding: 30px 21px;
     padding-right: 0;
 
     border-radius: 15px;
@@ -1215,6 +1223,7 @@ div.product-link {
 
     margin: 0;
     margin-bottom: 34px;
+    margin-top: -4px;
     padding: 0;
     padding-right: 20px;
 }
@@ -1229,8 +1238,8 @@ div.product-link {
     margin-right: 12px;
     padding-left: 13px;
     padding-right: 13px;
-    padding-top: 8px;
-    padding-bottom: 10px;
+    padding-top: 9px;
+    padding-bottom: 11px;
 	
 	border: none;		
     border-radius: 5px;
@@ -1256,7 +1265,7 @@ div.product-link {
 
     width: 1200px;
     min-height: 430px;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
     margin-left: -27px;
 
     color: #323232;
@@ -1314,7 +1323,7 @@ div.product-link {
 
 .contact-info-tel span {
 	display: block;
-	margin-top: 8px;
+	margin-top: 6px;
 	margin-bottom: 2px;
 }
 
@@ -1325,7 +1334,7 @@ div.product-link {
 .main-footer ul {
     font-size: 13px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 16px;
 
     margin: 0;
     padding: 0;
@@ -1350,7 +1359,7 @@ footer .container {
     display: -ms-flexbox;
     display: flex;
 
-    margin-top: 19px;
+    margin-top: 18px;
     padding-bottom: 26px;
 
     -webkit-box-pack: justify;
@@ -1448,8 +1457,8 @@ footer .container {
 .footer-copyright p,
 .footer-copyright a {
     font-size: 12px;
-    font-weight: normal;
-    line-height: 18px;
+    font-weight: 400;
+    line-height: 16px;
 
     margin: 0;
     padding: 0;
@@ -1654,7 +1663,7 @@ footer .container {
     line-height: 41px;
 
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
     padding: 0;
 
     color: #fff;
@@ -1670,7 +1679,7 @@ footer .container {
     display: flex;
 
     margin: 0;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
     padding: 0;
 
     list-style: none;
@@ -1685,7 +1694,9 @@ footer .container {
 }
 
 .breadcrumbs a {
-    font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+    font-weight: 400;
 
     color: rgba(255, 255, 255, .8);
 }
@@ -1703,9 +1714,10 @@ footer .container {
 
 .filtres {
     font-size: 14px;
-    font-weight: 400;
+    line-height: 16px;
+    font-weight: 500;
 
-    margin-bottom: 38px;
+    margin-bottom: 41px;
 }
 
 form.filter {
@@ -1755,7 +1767,7 @@ select option {
 select:hover {
     color: #323232;
     background-image: url(../img/icon-select-open.svg);
-    background-position: top 13px  right 13px;
+    background-position: top 14px  right 15px;
 }
 
 .sorting p {
@@ -1855,6 +1867,7 @@ select:hover {
 
 .percent  li {
     font-size: 16px;
+    line-height: 18px;
 
     margin-right: 19px;
 }
@@ -1894,8 +1907,13 @@ select:hover {
     opacity: 1;
 }
 
+div.fillers {
+	margin-right: 10px;
+}
+
 .fillers .fillers-list {
     font-size: 16px;
+    line-height: 18px;
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1903,9 +1921,9 @@ select:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 
-    min-width: 635px;
+    min-width: 630px;
     margin: 0;
-    padding: 5px 20px 5px 16px;
+    padding: 5px 17px 5px 16px;
 
     list-style: none;
 
@@ -1925,7 +1943,7 @@ select:hover {
 .fillers p {
     margin: 0;
     margin-top: 14px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     padding: 0;
     padding-left: 14px;
 }
@@ -1971,6 +1989,7 @@ select:hover {
 .filter-button {
     font-size: 16px;
     line-height: 18px;
+    font-weight: 500;
 
     min-height: 32px;
     padding: 9px 30px;
@@ -2000,8 +2019,8 @@ select:hover {
     display: -ms-flexbox;
     display: flex;
 
-    margin-top: 45px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 28px;
 
     -webkit-box-pack: end;
     -ms-flex-pack: end;
