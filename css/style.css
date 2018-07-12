@@ -187,18 +187,7 @@ body {
 }
 
 .user-navigation > li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
     margin-right: 10px;
-
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
 }
 
 .user-navigation > li:last-child {
@@ -213,9 +202,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-
+	flex-shrink: 0;
     width: 31px;
-    min-height: 31px;
+    height: 31px;
 
     text-align: center;
 
@@ -227,12 +216,6 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-}
-
-.search-link svg {
-	position: absolute;
-	top: 6px;
-	left: 7px;
 }
 
 .hover-search {
@@ -1849,13 +1832,14 @@ div.product-link {
 .sorting select {
     font-size: 16px;
     line-height: 19px;
-
+	
+	height: 37px;
 	padding: 0;
-    padding: 9px 32px 9px 15px;
+    padding: 7px 32px 9px 15px;
 
     background-image: url('../img/icon-select.svg');
     background-repeat: no-repeat;
-    background-position: top 14px  right 15px;
+    background-position: top 50%  right 13px;
     border: none;
 
     -webkit-appearance: none;
@@ -1876,12 +1860,12 @@ div.product-link {
 	outline: none;
     color: #323232;
     background-image: url(../img/icon-select-open.svg);
-    background-position: top 14px  right 15px;
+    background-position: top 50%  right 13px;
 }
 
 .sorting p {
     margin: 0;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     padding: 0;
     padding-left: 15px;
 }
