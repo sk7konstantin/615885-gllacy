@@ -272,6 +272,10 @@ body {
 	line-height: 24px;
 }
 
+.user-navigation input::placeholder {
+	font-weight: 400;
+}
+
 .search-link-form input {
     font-size: 14px;
     line-height: 18px;
@@ -1278,6 +1282,10 @@ div.product-link {
 	line-height: 24px;
 }
 
+.distribution-form input::placeholder {
+	font-weight: 400;
+}
+
 .distribution-button {
     padding-left: 19px;
     padding-right: 19px;
@@ -1631,6 +1639,10 @@ div.product-link {
 
 .feedback-form input:valid {
 	font-weight: 700;
+}
+
+.feedback-form input::placeholder {
+	font-weight: 400;
 }
 
 .feedback-comments {
